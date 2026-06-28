@@ -102,7 +102,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="https://gumroad.com/l/codesnap-pro"
+                href="https://yendiyo.gumroad.com/l/codesnap-pro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`block w-full py-4 rounded-xl font-semibold text-center transition-all duration-300 ${
