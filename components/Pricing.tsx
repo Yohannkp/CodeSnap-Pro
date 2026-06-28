@@ -18,6 +18,7 @@ const plans = [
       { text: 'Support prioritaire', included: false },
     ],
     cta: 'Installer gratuitement',
+    href: '/free-download',
     popular: false,
   },
   {
@@ -36,6 +37,7 @@ const plans = [
       { text: 'Licence pour 3 appareils', included: true },
     ],
     cta: 'Obtenir CodeSnap Pro',
+    href: 'https://yendiyo.gumroad.com/l/codesnap-pro',
     popular: true,
   },
 ]
@@ -102,9 +104,9 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="https://yendiyo.gumroad.com/l/codesnap-pro"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={plan.href}
+                target={plan.href.startsWith('http') ? '_blank' : '_self'}
+                rel={plan.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 className={`block w-full py-4 rounded-xl font-semibold text-center transition-all duration-300 ${
                   plan.popular
                     ? 'bg-primary hover:bg-primary/80 text-white glow-effect'
