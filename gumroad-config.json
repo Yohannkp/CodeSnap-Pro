@@ -1,0 +1,68 @@
+{
+  "product": {
+    "name": "CodeSnap Pro",
+    "description": "Capturez du code avec un rendu professionnel. Paiement unique, licence permanente.",
+    "price": 19,
+    "currency": "EUR",
+    "url": "https://gumroad.com/l/codesnap-pro",
+    "tags": ["code", "screenshot", "developer", "chrome extension", "productivity"],
+    "featured": false,
+    "requireShipping": false,
+    "coverImage": "/images/cover.png",
+    "previewImages": [
+      "/images/preview-1.png",
+      "/images/preview-2.png",
+      "/images/preview-3.png"
+    ]
+  },
+  "licensing": {
+    "type": "fixed",
+    "maxDevices": 3,
+    "customLicenseData": true
+  },
+  "files": [
+    {
+      "name": "CodeSnap Pro Extension",
+      "url": "/extension/codesnap-pro.zip",
+      "description": "Extension Chrome complète (fichiers + icônes)"
+    }
+  ],
+  "productDetails": {
+    "features": [
+      "Captures illimitées",
+      "10+ thèmes de couleur premium",
+      "Export PNG haute résolution",
+      "Sans watermark",
+      "Nouveaux thèmes inclus",
+      "Support prioritaire",
+      "Licence pour 3 appareils"
+    ],
+    "why": [
+      "Gagnez du temps sur chaque partage de code",
+      "Profesionnalisez votre présence en ligne",
+      "Un seul paiement, accès à vie"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Comment recevoir l'extension après l'achat ?",
+      "answer": "Vous recevrez un lien de téléchargement instantanément par email après le paiement. Le fichier ZIP contient l'extension Chrome complète avec instructions d'installation."
+    },
+    {
+      "question": "Puis-je utiliser CodeSnap Pro sur plusieurs appareils ?",
+      "answer": "Oui, votre licence est valide pour 3 appareils (par exemple : ordi fixe, laptop, tablette)."
+    },
+    {
+      "question": "Y a-t-il des frais récurrents ?",
+      "answer": "Non, c'est un paiement unique. Vous aurez accès à vie à la version Pro sans aucun frais supplémentaire."
+    },
+    {
+      "question": "Comment fonctionne le remboursement ?",
+      "answer": "Nous offrons un remboursement complet sous 30 jours si vous n'êtes pas satisfait, sans question posée."
+    },
+    {
+      "question": "L'extension fonctionne-t-elle hors ligne ?",
+      "answer": "Oui ! Une fois installée, CodeSnap Pro fonctionne entièrement hors ligne."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+CodeSnap Pro - Test Report
+==================================================
+Date: 2026-06-28T10:33:29.733Z
+Réussis: 13/13
+Échoués: 0
+
+Tests passés:
+  1. ✅ Titre de la page: "CodeSnap Pro - Capture de Code Stylisée"
+  2. ✅ Section Hero visible
+  3. ✅ Bouton CTA "Obtenir CodeSnap Pro" visible
+  4. ✅ Section Features visible
+  5. ✅ Section Tarification visible
+  6. ✅ Prix Pro à 19€ affiché
+  7. ✅ Thème Nord sélectionné
+  8. ✅ Bouton "Capturer cette image" présent
+  9. ✅ Bouton "Capturer cette image" est cliquable
+  10. ✅ Bouton cliqué sans erreur
+  11. ✅ Plan Gratuit visible
+  12. ✅ Plan Pro visible
+  13. ✅ Badge "Paiement sécurisé" visible
