@@ -1,8 +1,26 @@
 'use client'
 
-import { Code2, Sparkles, Zap } from 'lucide-react'
+import { useState } from 'react'
+import { Code2, Sparkles, Zap, Check, Mail } from 'lucide-react'
 
 export default function Hero() {
+  const [email, setEmail] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!email) return
+
+    setLoading(true)
+
+    // Simulate API call (in production, connect to Mailchimp/ConvertKit/Notion)
+    await new Promise(resolve => setTimeout(resolve, 1000))
+
+    setSubmitted(true)
+    setLoading(false)
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl mx-auto text-center">
@@ -42,6 +60,52 @@ export default function Hero() {
           >
             Voir la démo →
           </a>
+        </div>
+
+        {/* Email Capture Form */}
+        <div className="max-w-md mx-auto mb-12">
+          {!submitted ? (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="relative">
+                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground/40" />
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="votre@email.com"
+                  required
+                  className="w-full pl-12 pr-4 py-4 rounded-xl bg-white/5 border border-foreground/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-foreground placeholder:text-foreground/40"
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full py-4 bg-accent hover:bg-accent/80 disabled:opacity-50 text-background font-semibold rounded-xl transition-all flex items-center justify-center gap-2"
+              >
+                {loading ? (
+                  <span className="animate-pulse">Envoi en cours...</span>
+                ) : (
+                  <>
+                    <Mail className="w-5 h-5" />
+                    Me prévenir quand c'est prêt
+                  </>
+                )}
+              </button>
+              <p className="text-xs text-foreground/50">
+                Gratuit. Sans spam. Réservez votre place pour le lancement.
+              </p>
+            </form>
+          ) : (
+            <div className="bg-success/20 border border-success/30 rounded-xl p-6">
+              <div className="flex items-center justify-center gap-2 text-success mb-2">
+                <Check className="w-6 h-6" />
+                <span className="font-bold text-lg">Parfait !</span>
+              </div>
+              <p className="text-foreground/80">
+                Vous serez notifié dès que l'extension sera disponible.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Code Preview Mockup */}
