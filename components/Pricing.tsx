@@ -22,7 +22,7 @@ const plans = [
   },
   {
     name: 'Pro',
-    price: '19€',
+    price: '8.77€',
     description: 'Une seule fois, durée de vie illimitée',
     priceNote: 'Paiement unique • Licence permanente',
     features: [
